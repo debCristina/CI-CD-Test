@@ -1,0 +1,18 @@
+#
+//  test.yml
+//  CryptoPaper
+//
+//  Created by Débora Cristina Silva Ferreira on 06/03/26.
+//
+
+name: Test Project Pipeline
+
+on:
+    pull_request:
+        branches:
+         - develop
+    workflow_dispatch:
+    
+jobs:
+
+

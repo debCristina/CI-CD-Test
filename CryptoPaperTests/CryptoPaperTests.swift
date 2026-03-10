@@ -25,18 +25,16 @@ final class CryptoPaperTests: XCTestCase {
         
         // Criar a configuração
         let config = ModelConfiguration(isStoredInMemoryOnly:  true)
-        
-        // Criar o container do banco
         let container = try ModelContainer(for: schema, configurations: config)
-        
+
         // Salvando o contexto com o container criado
         self.dataController  = DataController(container: container)
     }
     
+    
     override func tearDownWithError() throws {
         dataController = nil
     }
-
     @MainActor
     func testPersistsRelationshipWithDataController() throws {
         //Given
