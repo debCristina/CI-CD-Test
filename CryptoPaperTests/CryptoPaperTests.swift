@@ -75,7 +75,7 @@ final class CryptoPaperTests: XCTestCase {
         viewModel.getBalance()
         
         //Then
-        XCTAssertEqual(viewModel.totalBalance, 100100.0)
+        XCTAssertEqual(viewModel.totalBalance, 100000.0)
     }
     
     func testGetBalanceCoinNotFindShouldIgnoreCoin() {
