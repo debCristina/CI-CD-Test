@@ -33,7 +33,7 @@ struct CryptoPaperSwiftTests {
         viewModel.getBalance()
         
         //Then
-        #expect(viewModel.totalBalance == 100100)
+        #expect(viewModel.totalBalance == 100100.0)
     }
     
     @Test
@@ -67,8 +67,6 @@ struct CryptoPaperSwiftTests {
         #expect(viewModel.filteredCoins.count == 2)
         #expect(viewModel.filteredCoins.first?.symbol == "BTC")
         #expect(viewModel.filteredCoins.last?.symbol == "EGH")
-
-        
 
     }
 
