@@ -94,7 +94,6 @@
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		4B2ABD512F566F09002DFD28 /* CryptoPaperTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = CryptoPaperTests; sourceTree = "<group>"; };
 		4B2ABD5E2F58840E002DFD28 /* CryptoPaperSwiftTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = CryptoPaperSwiftTests; sourceTree = "<group>"; };
-		4BDE3CDB2F58FF4700A76A28 /* SudokuTestsUI */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = SudokuTestsUI; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,7 +134,6 @@
 				288CA9652C249C5900D8E01E /* CryptoPaper */,
 				4B2ABD512F566F09002DFD28 /* CryptoPaperTests */,
 				4B2ABD5E2F58840E002DFD28 /* CryptoPaperSwiftTests */,
-				4BDE3CDB2F58FF4700A76A28 /* SudokuTestsUI */,
 				288CA9642C249C5900D8E01E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -430,9 +428,6 @@
 			);
 			dependencies = (
 				4BDE3CE12F58FF4700A76A28 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				4BDE3CDB2F58FF4700A76A28 /* SudokuTestsUI */,
 			);
 			name = SudokuTestsUI;
 			packageProductDependencies = (
