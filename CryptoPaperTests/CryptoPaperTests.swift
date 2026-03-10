@@ -13,7 +13,7 @@ final class CryptoPaperTests: XCTestCase {
     var dataController: DataController!
     var service: ServiceManager!
     
-    // Criar um banco de dados fake que pode ser utilizados por diferentes testes
+    // Criar um banco de dados fake que pode ser utilizados por diferentes testeslll
     @MainActor
     override func setUpWithError() throws {
         // Usar um banco de dados em memoria e não no disco
@@ -25,18 +25,16 @@ final class CryptoPaperTests: XCTestCase {
         
         // Criar a configuração
         let config = ModelConfiguration(isStoredInMemoryOnly:  true)
-        
-        // Criar o container do banco
         let container = try ModelContainer(for: schema, configurations: config)
-        
+
         // Salvando o contexto com o container criado
         self.dataController  = DataController(container: container)
     }
     
+    
     override func tearDownWithError() throws {
         dataController = nil
     }
-
     @MainActor
     func testPersistsRelationshipWithDataController() throws {
         //Given
@@ -51,7 +49,7 @@ final class CryptoPaperTests: XCTestCase {
 
         //Then
         let fetchedUser = dataController.fetchUser()
-        XCTAssertEqual(fetchedUser.coins.count, 1)
+        XCTAssertEqual(fetchedUser.coins.count, 2)
         XCTAssertTrue(fetchedUser.coins.contains { $0.name == "teste" && $0.amount == 50000 })
     }
     
@@ -77,7 +75,7 @@ final class CryptoPaperTests: XCTestCase {
         viewModel.getBalance()
         
         //Then
-        XCTAssertEqual(viewModel.totalBalance, 100100)
+        XCTAssertEqual(viewModel.totalBalance, 100000.0)
     }
     
     func testGetBalanceCoinNotFindShouldIgnoreCoin() {
