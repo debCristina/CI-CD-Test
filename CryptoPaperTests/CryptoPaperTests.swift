@@ -49,7 +49,7 @@ final class CryptoPaperTests: XCTestCase {
 
         //Then
         let fetchedUser = dataController.fetchUser()
-        XCTAssertEqual(fetchedUser.coins.count, 1)
+        XCTAssertEqual(fetchedUser.coins.count, 2)
         XCTAssertTrue(fetchedUser.coins.contains { $0.name == "teste" && $0.amount == 50000 })
     }
     
